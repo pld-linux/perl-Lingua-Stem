@@ -8,12 +8,12 @@
 Summary:	Lingua::Stem - stemming of words
 Summary(pl):	Modu³ Perla Lingua::Stem - okre¶laj±cy rdzenie s³ów
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.60
-Release:	2
+Version:	0.61
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9fa4e866ff0b20db50b82ac7c984cfca
+# Source0-md5:	ca99b08aa82fcbcd749d4903b205fcec
 %if 0%{!?_without_tests:1}
 BuildRequires:	perl-Lingua-GL-Stemmer
 BuildRequires:	perl-Lingua-PT-Stemmer
