@@ -18,10 +18,11 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 %if %{with tests}
 BuildRequires:	perl-Lingua-GL-Stemmer
 BuildRequires:	perl-Lingua-PT-Stemmer
+BuildRequires:	perl-Lingua-Stem-Fr >= 0.02
 BuildRequires:	perl-Lingua-Stem-It
-BuildRequires:	perl-Lingua-Stem-Snowball-Da
-BuildRequires:	perl-Lingua-Stem-Snowball-No
-BuildRequires:	perl-Lingua-Stem-Snowball-Se
+BuildRequires:	perl-Lingua-Stem-Snowball-Da >= 1.01
+BuildRequires:	perl-Lingua-Stem-Snowball-No >= 1.00
+BuildRequires:	perl-Lingua-Stem-Snowball-Se >= 1.01
 BuildRequires:	perl-Text-German
 %endif
 BuildRequires:	perl-devel >= 5.6
