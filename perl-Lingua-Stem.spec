@@ -26,7 +26,7 @@ s³owa, zwracaj±c tematy s³ów w³a¶ciwe dla ustawionej lokalizacji.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{!?_without_tests:%{__make} test}
 
