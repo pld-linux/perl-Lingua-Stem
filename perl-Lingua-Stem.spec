@@ -2,10 +2,10 @@
 %define	pdir	Lingua
 %define	pnam	Stem
 Summary:	Lingua::Stem -- Stemming of words
-#Summary(pl):	
+Summary(pl):	Modu³ Perla Lingua::Stem - okre¶laj±cy temat s³ów
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.50
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,8 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This routine applies stemming algorithms to its parameters, returning
 the stemmed words as appropriate to the selected locale.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ta funkcja wykonuje na swoich parametrach algorytmy okre¶laj±ce temat
+s³owa, zwracaj±c tematy s³ów w³a¶ciwe dla ustawionej lokalizacji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
