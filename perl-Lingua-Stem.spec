@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla Lingua::Stem - okre¶lanie rdzeni s³ów
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.61
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ca99b08aa82fcbcd749d4903b205fcec
