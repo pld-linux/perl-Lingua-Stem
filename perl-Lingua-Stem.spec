@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Lingua
-%define	pnam	Stem
+%define		pdir	Lingua
+%define		pnam	Stem
 Summary:	Lingua::Stem Perl module - stemming of words
 Summary(pl):	Modu³ Perla Lingua::Stem - okre¶lanie rdzeni s³ów
 Name:		perl-Lingua-Stem
