@@ -1,15 +1,28 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Lingua
 %define	pnam	Stem
-Summary:	Lingua::Stem -- Stemming of words
-Summary(pl):	Modu³ Perla Lingua::Stem - okre¶laj±cy temat s³ów
+Summary:	Lingua::Stem - stemming of words
+Summary(pl):	Modu³ Perla Lingua::Stem - okre¶laj±cy rdzenie s³ów
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.50
-Release:	3
-License:	GPL/Artistic
+Version:	0.60
+Release:	2
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	33531d477d589ef2019c1b2b53bd0c82
+# Source0-md5:	9fa4e866ff0b20db50b82ac7c984cfca
+%if 0%{!?_without_tests:1}
+BuildRequires:	perl-Lingua-GL-Stemmer
+BuildRequires:	perl-Lingua-PT-Stemmer
+BuildRequires:	perl-Lingua-Stem-It
+BuildRequires:	perl-Lingua-Stem-Snowball-Da
+BuildRequires:	perl-Lingua-Stem-Snowball-No
+BuildRequires:	perl-Lingua-Stem-Snowball-Se
+BuildRequires:	perl-Text-German
+%endif
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -20,8 +33,9 @@ This routine applies stemming algorithms to its parameters, returning
 the stemmed words as appropriate to the selected locale.
 
 %description -l pl
-Ta funkcja wykonuje na swoich parametrach algorytmy okre¶laj±ce temat
-s³owa, zwracaj±c tematy s³ów w³a¶ciwe dla ustawionej lokalizacji.
+Ta funkcja wykonuje na swoich parametrach algorytmy okre¶laj±ce
+rdzenie s³ów, zwracaj±c rdzenie s³ów w³a¶ciwe dla ustawionej
+lokalizacji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -43,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
+%{perl_vendorlib}/%{pdir}/%{pnam}/*.pm
 %{_mandir}/man3/*
