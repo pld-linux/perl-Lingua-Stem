@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Lingua
@@ -14,7 +14,7 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ca99b08aa82fcbcd749d4903b205fcec
-%if 0%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-Lingua-GL-Stemmer
 BuildRequires:	perl-Lingua-PT-Stemmer
 BuildRequires:	perl-Lingua-Stem-It
@@ -44,7 +44,8 @@ lokalizacji.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
