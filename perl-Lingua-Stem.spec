@@ -7,7 +7,7 @@
 %define	pnam	Stem
 Summary:	Lingua::Stem Perl module - stemming of words
 Summary(pl):	Modu³ Perla Lingua::Stem - okre¶lanie rdzeni s³ów
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Lingua-Stem
 Version:	0.70
 Release:	1
 # same as perl
