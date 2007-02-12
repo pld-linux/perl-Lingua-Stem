@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	Stem
 Summary:	Lingua::Stem Perl module - stemming of words
-Summary(pl):	Modu≥ Perla Lingua::Stem - okre∂lanie rdzeni s≥Ûw
+Summary(pl.UTF-8):   Modu≈Ç Perla Lingua::Stem - okre≈õlanie rdzeni s≈Ç√≥w
 Name:		perl-Lingua-Stem
 Version:	0.81
 Release:	1
@@ -34,9 +34,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This routine applies stemming algorithms to its parameters, returning
 the stemmed words as appropriate to the selected locale.
 
-%description -l pl
-Ta funkcja wykonuje na swoich parametrach algorytmy okre∂laj±ce
-rdzenie s≥Ûw, zwracaj±c rdzenie s≥Ûw w≥a∂ciwe dla ustawionej
+%description -l pl.UTF-8
+Ta funkcja wykonuje na swoich parametrach algorytmy okre≈õlajƒÖce
+rdzenie s≈Ç√≥w, zwracajƒÖc rdzenie s≈Ç√≥w w≈Ça≈õciwe dla ustawionej
 lokalizacji.
 
 %prep
