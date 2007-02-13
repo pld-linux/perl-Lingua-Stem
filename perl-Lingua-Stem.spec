@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	Stem
 Summary:	Lingua::Stem Perl module - stemming of words
-Summary(pl.UTF-8):   Moduł Perla Lingua::Stem - określanie rdzeni słów
+Summary(pl.UTF-8):	Moduł Perla Lingua::Stem - określanie rdzeni słów
 Name:		perl-Lingua-Stem
 Version:	0.81
 Release:	1
