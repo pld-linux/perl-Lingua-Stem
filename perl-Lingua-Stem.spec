@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Lingua/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b826bf751e8df6244a786d4686b5dacb
+URL:		http://search.cpan.org/dist/Lingua-Stem/
 %if %{with tests}
 BuildRequires:	perl-Lingua-GL-Stemmer
 BuildRequires:	perl-Lingua-PT-Stemmer
@@ -60,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}/*.pm
+%{perl_vendorlib}/Lingua/*.pm
+%{perl_vendorlib}/Lingua/Stem/*.pm
 %{_mandir}/man3/*
