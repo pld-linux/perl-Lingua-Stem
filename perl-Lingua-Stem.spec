@@ -8,13 +8,13 @@
 Summary:	Lingua::Stem Perl module - stemming of words
 Summary(pl.UTF-8):	Moduł Perla Lingua::Stem - określanie rdzeni słów
 Name:		perl-Lingua-Stem
-Version:	0.83
+Version:	0.84
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Lingua/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b826bf751e8df6244a786d4686b5dacb
+# Source0-md5:	a236b5d85ac49f84aad447c1383ad2de
 URL:		http://search.cpan.org/dist/Lingua-Stem/
 %if %{with tests}
 BuildRequires:	perl-Lingua-GL-Stemmer
